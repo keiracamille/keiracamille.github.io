@@ -1,9 +1,12 @@
-var data = [30, 86, 168, 281, 303, 365];
+function changePageFunction(text){
+    document.getElementById('demo').innerHTML = text;
+}
 
-d3.select(".chart")
-    .selectAll("div")
-    .data(data)
-    .enter()
-    .append("div")
-    .style("width", function(d) { return d + "px"; })
-    .text(function(d) { return d; });
+
+function clickHandler(){
+
+   var inputText= document.getElementById('jamesInput').value
+    changePageFunction(inputText)
+}
+
+console.log("ello")
